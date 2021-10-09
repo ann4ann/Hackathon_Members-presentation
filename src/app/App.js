@@ -1,18 +1,8 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./components/AppRouter";
-import Container from "./components/Container";
-import NavBar from "./components/UI/Navbar/NavBar";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Container>
-        <NavBar />
-        <AppRouter />
-      </Container>
-    </BrowserRouter>
-  );
+  return <div>Приложение</div>;
 }
 
 export default App;
