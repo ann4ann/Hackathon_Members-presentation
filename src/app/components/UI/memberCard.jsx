@@ -8,10 +8,10 @@ const MemberCard = ({ member }) => {
       className="card d-flex justify-content-between m-1 bg-dark bg-gradient bg-opacity-50"
       style={{ width: 14 + "rem" }}>
       <div>
-        <div>
+        <div className="p-2">
           <img
             src={member.photoUrl}
-            className="card-img-top rounded mx-auto d-block"
+            className="card-img-top rounded mx-auto"
             alt="photo"
           />
         </div>
