@@ -4,7 +4,14 @@ import { ageEnding } from "../../utils/ageEnding";
 import { Link } from "react-router-dom";
 import ButtonComponent from "./button";
 
-const MemberCard = ({ member, onAddFavorite }) => {
+
+const MemberCard = ({ member }) => {
+  const handleToggleFavorite = (member) => {
+    localStorage.getItem(member.id) === null
+      ? localStorage.setItem(member.id, JSON.stringify(member))
+      : localStorage.removeItem(member.id);
+  };
+
   return (
     <div
       className="card d-flex justify-content-between m-1 bg-dark bg-gradient bg-opacity-50"
@@ -32,8 +39,10 @@ const MemberCard = ({ member, onAddFavorite }) => {
 
         <ButtonComponent
           color="primary"
-          functBtn={() => onAddFavorite(member)}
-          name="Favorites"></ButtonComponent>
+          name="fav"
+          functBtn={() => handleToggleFavorite(member)}
+        />
+
       </div>
     </div>
   );
