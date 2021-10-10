@@ -1,7 +1,9 @@
 import React from "react";
+import AllMembers from "../components/UI/allMembers";
+import members from "../data/members";
 
 const MembersPage = () => {
-  return <h1>MembersPage</h1>;
+  return <AllMembers members={members} />;
 };
 
 export default MembersPage;
