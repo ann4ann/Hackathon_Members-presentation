@@ -3,7 +3,7 @@ import { ageEnding } from "../utils/ageEnding";
 import PropTypes from "prop-types";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ButtonComponent from "../components/UI/button";
-// import Progress from "../components/UI/progress";
+import Progress from "../components/UI/progress/progress";
 
 const MemberItemPage = ({ id, members }) => {
   const currentMemberInfo = members.find((member) => member.id === id);
@@ -11,6 +11,7 @@ const MemberItemPage = ({ id, members }) => {
     console.log("added to favorites");
   };
 
+  console.log(Object.entries(currentMemberInfo.skills));
   return (
     <div className="m-5">
       <h1>{currentMemberInfo.name}</h1>
@@ -65,7 +66,16 @@ const MemberItemPage = ({ id, members }) => {
         </div>
         <div className="m-3">
           Скиллы:
-          {/* <div><Progress /></div> */}
+          {Object.entries(currentMemberInfo.skills).map((skill) => (
+            <div key={skill[0]} className="m-3">
+              <Progress
+                percent={skill[1]}
+                name={skill[0]}
+                color="#011f4b"
+                type={skill[0] === "react" ? "circle" : ""}
+              />
+            </div>
+          ))}
         </div>
       </div>
       <ButtonComponent
