@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import AllMembers from "../components/UI/allMembers";
 import members from "../data/members";
@@ -13,3 +14,5 @@ const MembersPage = () => {
 };
 
 export default MembersPage;
+=======
+>>>>>>> cab979fee23af73ffaec27be9fee33cdecccc72a

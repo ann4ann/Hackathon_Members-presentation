@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./components/AppRouter";
 import Container from "./components/Container";
@@ -26,6 +27,11 @@ function App() {
       </Container>
     </BrowserRouter>
   );
+=======
+
+function App() {
+  return <div>Приложение</div>;
+>>>>>>> cab979fee23af73ffaec27be9fee33cdecccc72a
 }
 
 export default App;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import Breadcramps from "../components/UI/breadcramps";
 import { Link } from "react-router-dom";
@@ -27,3 +28,5 @@ const MainPage = () => {
 };
 
 export default MainPage;
+=======
+>>>>>>> cab979fee23af73ffaec27be9fee33cdecccc72a
