@@ -1,10 +1,12 @@
 import React from "react";
+import Breadcramps from "../components/UI/breadcramps";
 import { Link } from "react-router-dom";
 import classes from "../layouts/main.module.css";
 
 const MainPage = () => {
   return (
     <div>
+      <Breadcramps />
       <h1>
         <p align="center" className={classes.text}>
           В команду, которая разработала Реакт-приложение, где вы сейчас
