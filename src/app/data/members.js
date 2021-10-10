@@ -65,20 +65,23 @@ const members = [
     id: "4",
     name: "Владимир",
     age: 26,
-    about: "JS developer",
-    photoUrl: "https://...",
+    about: `Начинающий специалист в сфере IT.
+    Быстро обучаюсь, уверен, что работа в коллективе профессионалов дает еще больше интереса и ускоряет процесс обучения.
+    Желаю расширять свои компетенции, познавать новое и совершенствоваться.`,
+    photoUrl:
+      "https://sun9-82.userapi.com/impg/8btGXh8DvdhKQKmgxJI8rXg-f3bmQB4KszxBsQ/5BMz-Bkh0SE.jpg?size=960x1280&quality=96&sign=2762097f6206c635e1055958658c360b&type=album",
     socialNetworks: {
-      telegram: "https://...",
-      vk: "https://...",
-      inst: "https://..."
+      telegram: "https://t.me/BallDeuj",
+      vk: "https://vk.com/id142787489",
+      inst: "https://www.instagram.com/nutyablin/"
     },
     contribution: "develop something",
     isTeamLeader: false,
     skills: {
-      html: 25,
-      css: 25,
-      js: 25,
-      react: 25
+      html: 40,
+      css: 40,
+      js: 70,
+      react: 60
     }
   },
 
