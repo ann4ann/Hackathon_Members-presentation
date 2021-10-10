@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Hackathon_Members-presentation/static/css/main.4ac41c1d.chunk.css",
-    "main.js": "/Hackathon_Members-presentation/static/js/main.aad34059.chunk.js",
-    "main.js.map": "/Hackathon_Members-presentation/static/js/main.aad34059.chunk.js.map",
+    "main.css": "/Hackathon_Members-presentation/static/css/main.280149c7.chunk.css",
+    "main.js": "/Hackathon_Members-presentation/static/js/main.bdac43a1.chunk.js",
+    "main.js.map": "/Hackathon_Members-presentation/static/js/main.bdac43a1.chunk.js.map",
     "runtime-main.js": "/Hackathon_Members-presentation/static/js/runtime-main.29eb6041.js",
     "runtime-main.js.map": "/Hackathon_Members-presentation/static/js/runtime-main.29eb6041.js.map",
     "static/css/2.c572c8ae.chunk.css": "/Hackathon_Members-presentation/static/css/2.c572c8ae.chunk.css",
-    "static/js/2.4b4d5724.chunk.js": "/Hackathon_Members-presentation/static/js/2.4b4d5724.chunk.js",
-    "static/js/2.4b4d5724.chunk.js.map": "/Hackathon_Members-presentation/static/js/2.4b4d5724.chunk.js.map",
+    "static/js/2.0feaae15.chunk.js": "/Hackathon_Members-presentation/static/js/2.0feaae15.chunk.js",
+    "static/js/2.0feaae15.chunk.js.map": "/Hackathon_Members-presentation/static/js/2.0feaae15.chunk.js.map",
     "index.html": "/Hackathon_Members-presentation/index.html",
     "static/css/2.c572c8ae.chunk.css.map": "/Hackathon_Members-presentation/static/css/2.c572c8ae.chunk.css.map",
-    "static/css/main.4ac41c1d.chunk.css.map": "/Hackathon_Members-presentation/static/css/main.4ac41c1d.chunk.css.map",
-    "static/js/2.4b4d5724.chunk.js.LICENSE.txt": "/Hackathon_Members-presentation/static/js/2.4b4d5724.chunk.js.LICENSE.txt",
+    "static/css/main.280149c7.chunk.css.map": "/Hackathon_Members-presentation/static/css/main.280149c7.chunk.css.map",
+    "static/js/2.0feaae15.chunk.js.LICENSE.txt": "/Hackathon_Members-presentation/static/js/2.0feaae15.chunk.js.LICENSE.txt",
     "static/media/bootstrap-icons.css": "/Hackathon_Members-presentation/static/media/bootstrap-icons.dfd0ea12.woff2",
     "static/media/react-logo.7098e271.svg": "/Hackathon_Members-presentation/static/media/react-logo.7098e271.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.29eb6041.js",
     "static/css/2.c572c8ae.chunk.css",
-    "static/js/2.4b4d5724.chunk.js",
-    "static/css/main.4ac41c1d.chunk.css",
-    "static/js/main.aad34059.chunk.js"
+    "static/js/2.0feaae15.chunk.js",
+    "static/css/main.280149c7.chunk.css",
+    "static/js/main.bdac43a1.chunk.js"
   ]
 }
