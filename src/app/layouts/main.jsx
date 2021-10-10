@@ -16,7 +16,6 @@ const MainPage = () => {
         </p>
       </h1>
       <Link className={classes.main} to="/members">
-        {" "}
         <h1>Meet our team</h1>{" "}
       </Link>
     </div>
