@@ -4,6 +4,7 @@ import { ageEnding } from "../../utils/ageEnding";
 import { Link } from "react-router-dom";
 import ButtonComponent from "./button";
 
+
 const MemberCard = ({ member }) => {
   const handleToggleFavorite = (member) => {
     localStorage.getItem(member.id) === null
@@ -32,21 +33,24 @@ const MemberCard = ({ member }) => {
         </div>
       </div>
       <div>
-        <Link to="#" className="btn btn-primary m-1">
-          Open
+        <Link to={`members/${member.id}`}>
+          <ButtonComponent color="primary" name="Open"></ButtonComponent>
         </Link>
+
         <ButtonComponent
           color="primary"
           name="fav"
           functBtn={() => handleToggleFavorite(member)}
         />
+
       </div>
     </div>
   );
 };
 
 MemberCard.propTypes = {
-  member: PropTypes.object.isRequired
+  member: PropTypes.object.isRequired,
+  onAddFavorite: PropTypes.func.isRequired
 };
 
 export default MemberCard;

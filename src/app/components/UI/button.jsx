@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 const ButtonComponent = ({ color, functBtn, name }) => {
   return (
-    <button type="button" className={"btn btn-" + color} onClick={functBtn}>
+    <button
+      type="button"
+      className={"btn btn-" + color + " m-1"}
+      onClick={functBtn}>
       {name}
     </button>
   );
