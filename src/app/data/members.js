@@ -11,7 +11,7 @@ const members = [
       vk: "https://vk.com/thesolex",
       inst: "https://www.instagram.com/solexofficial_/"
     },
-    contribution: "develop something",
+    contribution: "navBar, страница избранного, стили, particles",
     isTeamLeader: false,
     skills: {
       html: 100,
@@ -31,7 +31,7 @@ const members = [
       telegram: "https://t.me/Denis_Abrams",
       inst: "https://www.instagram.com/tony_kotoriy_fontana/"
     },
-    contribution: "develop component button",
+    contribution: "кнопка, главная страница",
     isTeamLeader: false,
     skills: {
       html: 25,
@@ -53,7 +53,7 @@ const members = [
       fb: "https://www.facebook.com/bevzobrazie",
       inst: "https://www.instagram.com/bevzobrazie"
     },
-    contribution: "Progress",
+    contribution: "прогресс-бар",
     isTeamLeader: false,
     skills: {
       html: 90,
@@ -76,7 +76,7 @@ const members = [
       vk: "https://vk.com/id142787489",
       inst: "https://www.instagram.com/nutyablin/"
     },
-    contribution: "develop something",
+    contribution: "breadcrumbs, страница команды",
     isTeamLeader: false,
     skills: {
       html: 40,
@@ -99,7 +99,7 @@ const members = [
       vk: "https://vk.com/anninanni",
       inst: "https://www.instagram.com/annockka/"
     },
-    contribution: "Карточка пользователя, Badge, ...",
+    contribution: "карточка участника, badge, страница пользователя",
     isTeamLeader: true,
     skills: {
       html: 100,
