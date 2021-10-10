@@ -8,17 +8,17 @@ const Progress = ({ percent, name, color, type }) => {
     let stylesLeft;
     if (percent <= 50) {
       stylesRight = {
-        "border-color": color || "#0d6efd",
+        borderColor: color || "#0d6efd",
         transform: `rotate(${(percent / 100) * 360}deg)`
       };
     } else {
       stylesRight = {
         transform: `rotate(180deg)`,
-        "border-color": color || "#0d6efd"
+        borderColor: color || "#0d6efd"
       };
       stylesLeft = {
         transform: `rotate(${((percent - 50) / 100) * 360}deg)`,
-        "border-color": color || "#0d6efd"
+        borderColor: color || "#0d6efd"
       };
     }
 
