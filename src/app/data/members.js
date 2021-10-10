@@ -1,5 +1,6 @@
 const members = [
   {
+    id: "1",
     name: "Марк",
     age: 123123,
     about: "JS developer",
@@ -19,6 +20,7 @@ const members = [
     }
   },
   {
+    id: "2",
     name: "Денис",
     age: 28,
     about: "JS developer",
@@ -38,6 +40,7 @@ const members = [
     }
   },
   {
+    id: "3",
     name: "Сергей",
     age: 30,
     about:
@@ -59,6 +62,7 @@ const members = [
     }
   },
   {
+    id: "4",
     name: "Владимир",
     age: 26,
     about: "JS developer",
