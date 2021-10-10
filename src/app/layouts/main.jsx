@@ -9,7 +9,9 @@ const MainPage = () => {
       <Breadcramps />
       <div>
         <h1>
-          <p align="center" className={classes.text}>
+          <p
+            align="center"
+            className="d-flex justify-content-between m-1 bg-dark bg-gradient bg-opacity-50 fs-4">
             В команду, которая разработала Реакт-приложение, где вы сейчас
             находитесь, входит 5 человек. Каждый из нас очень любит Реакт,
             JavaScript и Фронтенд в целом. Мы очень старались, когда
