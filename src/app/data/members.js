@@ -23,11 +23,11 @@ const members = [
     id: "2",
     name: "Денис",
     age: 28,
-    about: "JS developer",
-    photoUrl: "https://www.instagram.com/p/BvrShFtB1t7/",
+    about:
+      "На данный момент изучаю JavaScript и React. Дается не легко, но очень интересно, в будущем ставлю цель стать Junior frontend-разработчиком.",
+    photoUrl: "https://ic.wampi.ru/2021/10/10/photo_2019-08-06_10-03-35.jpg",
     socialNetworks: {
       telegram: "https://t.me/Denis_Abrams",
-      vk: "https://vk.com/t_fontana",
       inst: "https://www.instagram.com/tony_kotoriy_fontana/"
     },
     contribution: "develop component button",
