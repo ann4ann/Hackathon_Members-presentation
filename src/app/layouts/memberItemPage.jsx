@@ -33,8 +33,8 @@ const MemberItemPage = ({ id, members }) => {
               <a
                 href={currentMemberInfo.socialNetworks.telegram}
                 className="link-light">
-                Телеграм
-              </a>{" "}
+                Telegram
+              </a>
             </i>
           </p>
           <p>
@@ -46,8 +46,8 @@ const MemberItemPage = ({ id, members }) => {
                     : currentMemberInfo.socialNetworks.fb
                 }
                 className="link-light">
-                ВКонтакте
-              </a>{" "}
+                ВКонтакте/Facebook
+              </a>
             </i>
           </p>
           <p>
@@ -55,7 +55,7 @@ const MemberItemPage = ({ id, members }) => {
               <a
                 href={currentMemberInfo.socialNetworks.inst}
                 className="link-light">
-                Инстаграм
+                Instagram
               </a>{" "}
             </i>
           </p>
