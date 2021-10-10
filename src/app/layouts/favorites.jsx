@@ -3,15 +3,17 @@ import PropTypes from "prop-types";
 import MembersList from "../components/UI/membersList";
 
 const FavoritesPage = () => {
-  const [favoriteMembers, setFavoriteMembers] = useState([]);
+  const initialState = Object.keys(localStorage).map((key) =>
+    JSON.parse(localStorage.getItem(key))
+  );
+  const [favoriteMembers, setFavoriteMembers] = useState(initialState);
+
   useEffect(() => {
-    return () => {
-      setFavoriteMembers(
-        Object.keys(localStorage).map((key) =>
-          JSON.parse(localStorage.getItem(key))
-        )
-      );
-    };
+    const newState = Object.keys(localStorage).map((key) =>
+      JSON.parse(localStorage.getItem(key))
+    );
+    console.log(newState);
+    return setFavoriteMembers(newState);
   }, [favoriteMembers]);
 
   return <MembersList members={favoriteMembers} />;
