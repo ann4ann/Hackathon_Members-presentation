@@ -1,6 +1,5 @@
 const members = [
   {
-    id: "1",
     name: "Марк",
     age: 123123,
     about: "JS developer",
@@ -20,49 +19,48 @@ const members = [
     }
   },
   {
-    id: "2",
     name: "Денис",
-    age: 123123,
+    age: 28,
     about: "JS developer",
-    photoUrl: "https://...",
+    photoUrl: "https://www.instagram.com/p/BvrShFtB1t7/",
     socialNetworks: {
-      telegram: "https://...",
-      vk: "https://...",
-      inst: "https://..."
+      telegram: "https://t.me/Denis_Abrams",
+      vk: "https://vk.com/t_fontana",
+      inst: "https://www.instagram.com/tony_kotoriy_fontana/"
     },
-    contribution: "develop something",
+    contribution: "develop component button",
     isTeamLeader: false,
     skills: {
       html: 25,
       css: 25,
-      js: 25,
-      react: 25
+      js: 40,
+      react: 30
     }
   },
   {
-    id: "3",
     name: "Сергей",
-    age: 123123,
-    about: "JS developer",
-    photoUrl: "https://...",
+    age: 30,
+    about:
+      "Начинающий JS разработчик. Нравится разрабатывать что то новое. Личные качества: честность, ответственность, дружелюбность.",
+    photoUrl:
+      "https://scontent-iev1-1.xx.fbcdn.net/v/t31.18172-8/13693021_1128811510526748_8431415011526321586_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=zTQOJPAbVTsAX-DVs7i&_nc_ht=scontent-iev1-1.xx&oh=3c77b125c76cecfff689256be6e2c767&oe=618712CF",
     socialNetworks: {
-      telegram: "https://...",
-      vk: "https://...",
-      inst: "https://..."
+      telegram: "https://t.me/bevzobrazie",
+      fb: "https://www.facebook.com/bevzobrazie",
+      inst: "https://www.instagram.com/bevzobrazie"
     },
-    contribution: "develop something",
+    contribution: "Progress",
     isTeamLeader: false,
     skills: {
-      html: 25,
-      css: 25,
-      js: 25,
-      react: 25
+      html: 90,
+      css: 90,
+      js: 70,
+      react: 40
     }
   },
   {
-    id: "4",
     name: "Владимир",
-    age: 123123,
+    age: 26,
     about: "JS developer",
     photoUrl: "https://...",
     socialNetworks: {
@@ -79,6 +77,7 @@ const members = [
       react: 25
     }
   },
+
   {
     id: "5",
     name: "Анна Носкова",
