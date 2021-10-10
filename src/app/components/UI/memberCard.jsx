@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { ageEnding } from "../../utils/ageEnding";
+import { Link } from "react-router-dom";
 
 const MemberCard = ({ member }) => {
   return (
@@ -24,9 +25,9 @@ const MemberCard = ({ member }) => {
         </div>
       </div>
       <div>
-        <a href="#" className="btn btn-primary m-1">
+        <Link to="#" className="btn btn-primary m-1">
           Open
-        </a>
+        </Link>
         <a href="#" className="btn btn-primary m-1">
           Favorites
         </a>

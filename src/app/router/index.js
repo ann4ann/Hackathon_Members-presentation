@@ -5,5 +5,5 @@ import MembersPage from "../layouts/memberPage";
 export const publicRoutes = [
   { path: "/", component: MainPage, exact: true },
   { path: "/favorites", component: FavoritesPage, exact: true },
-  { path: "/members", component: MembersPage, exact: true }
+  { path: "/members/:memberId?", component: MembersPage, exact: true }
 ];
