@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ButtonComponent from "../components/UI/button";
 import Progress from "../components/UI/progress/progress";
+import Badge from "../components/UI/badge";
+import { Link } from "react-router-dom";
 
 const MemberItemPage = ({ id, members }) => {
   const currentMemberInfo = members.find((member) => member.id === id);
@@ -19,7 +21,7 @@ const MemberItemPage = ({ id, members }) => {
         {currentMemberInfo.age} {ageEnding(currentMemberInfo.age)}
       </p>
       <p>{currentMemberInfo.about}</p>
-      <div className="d-flex pt-3">
+      <div className="d-flex justify-content-between pt-3">
         <div>
           <img
             src={currentMemberInfo.photoUrl}
@@ -57,32 +59,45 @@ const MemberItemPage = ({ id, members }) => {
                 href={currentMemberInfo.socialNetworks.inst}
                 className="link-light">
                 Instagram
-              </a>{" "}
+              </a>
             </i>
           </p>
-          <div className="pt-4">
-            В разработке этого проекта делал: {currentMemberInfo.contribution}
+          <div className="p-4">
+            {currentMemberInfo.isTeamLeader && (
+              <Badge color="danger" content="TeamLead" />
+            )}
+            В разработке этого проекта выполнил(а):
           </div>
-        </div>
-        <div className="m-3">
-          Скиллы:
-          {Object.entries(currentMemberInfo.skills).map((skill) => (
-            <div key={skill[0]} className="m-3">
-              <Progress
-                percent={skill[1]}
-                name={skill[0]}
-                color="#011f4b"
-                type={skill[0] === "react" ? "circle" : ""}
-              />
-            </div>
+          {currentMemberInfo.contribution.split(", ").map((item) => (
+            <Badge key={item} color="success" content={item} />
           ))}
         </div>
+        <div className="d-flex align-items-center m-3">
+          <div className="fs-4" >Скиллы:</div>
+          <div className="mx-4">
+            {Object.entries(currentMemberInfo.skills).map((skill) => (
+              <div key={skill[0]} className="m-3">
+                <Progress
+                  percent={skill[1]}
+                  name={skill[0]}
+                  color="#011f4b"
+                  type={skill[0] === "react" ? "circle" : ""}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      <ButtonComponent
-        color="outline-info"
-        functBtn={addToFavorites}
-        name="Добавить в избранное"
-      />
+      <div className="d-flex justify-content-center">
+        <ButtonComponent
+          color="outline-info"
+          functBtn={addToFavorites}
+          name="Добавить в избранное"
+        />
+        <Link to="/members" className="btn btn-outline-info ms-3">
+          Вернуться назад
+        </Link>
+      </div>
     </div>
   );
 };
