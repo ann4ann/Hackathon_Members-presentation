@@ -2,21 +2,22 @@ const members = [
   {
     id: "1",
     name: "Марк",
-    age: 123123,
-    about: "JS developer",
-    photoUrl: "https://...",
+    age: 26,
+    about:
+      "Front-end разработчик. Влюбился в React с первого знакомства, активно его изучаю + стейт менеджер Redux. Фокусируюсь на MERN стаке. Также изучаю Typescript ",
+    photoUrl: "http://ipic.su/img/img7/fs/ava.1633896682.jpg",
     socialNetworks: {
-      telegram: "https://...",
-      vk: "https://...",
-      inst: "https://..."
+      telegram: "https://t.me/thesolex",
+      vk: "https://vk.com/thesolex",
+      inst: "https://www.instagram.com/solexofficial_/"
     },
     contribution: "develop something",
     isTeamLeader: false,
     skills: {
-      html: 25,
-      css: 25,
-      js: 25,
-      react: 25
+      html: 100,
+      css: 90,
+      js: 80,
+      react: 50
     }
   },
   {
