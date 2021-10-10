@@ -40,7 +40,11 @@ const MemberItemPage = ({ id, members }) => {
           <p>
             <i className="bi bi-people-fill">
               <a
-                href={currentMemberInfo.socialNetworks.vk}
+                href={
+                  currentMemberInfo.socialNetworks.vk
+                    ? currentMemberInfo.socialNetworks.vk
+                    : currentMemberInfo.socialNetworks.fb
+                }
                 className="link-light">
                 ВКонтакте
               </a>{" "}
