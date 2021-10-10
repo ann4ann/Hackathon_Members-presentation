@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-const Button = ({ color, functBtn, name }) => {
+const ButtonComponent = ({ color, functBtn, name }) => {
   return (
     <button type="button" className={"btn btn-" + color} onClick={functBtn}>
       {name}
@@ -8,9 +8,9 @@ const Button = ({ color, functBtn, name }) => {
   );
 };
 
-Button.PropTypes = {
+ButtonComponent.propTypes = {
   color: PropTypes.string,
   functBtn: PropTypes.func,
   name: PropTypes.string
 };
-export default Button;
+export default ButtonComponent;
