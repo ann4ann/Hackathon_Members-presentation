@@ -1,0 +1,12 @@
+.main {
+  margin-left: 40%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+
+  color: #ece7e8;
+  font-size: 20px;
+}
