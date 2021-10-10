@@ -1,14 +1,21 @@
 import React from "react";
-import MemberCard from "./memberCard";
 import PropTypes from "prop-types";
+import { useParams } from "react-router";
+import MembersList from "./membersList";
+import MemberItemPage from "../../layouts/memberItemPage";
 
 const AllMembers = ({ members }) => {
+  const params = useParams();
+  const { memberId } = params;
+
   return (
-    <div className="d-flex">
-      {members.map((member) => (
-        <MemberCard key={member.id} member={member} />
-      ))}
-    </div>
+    <>
+      {memberId ? (
+        <MemberItemPage id={memberId} members={members} />
+      ) : (
+        <MembersList members={members} />
+      )}
+    </>
   );
 };
 
