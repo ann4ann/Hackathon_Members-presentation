@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import { publicRoutes } from "../router";
+import { publicRoutes } from "../router/routes";
 
 const AppRouter = () => {
   return (
