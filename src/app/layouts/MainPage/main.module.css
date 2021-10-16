@@ -1,12 +1,89 @@
-.main {
-  margin-left: 40%;
+.mainWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainText {
+  padding: 70px 50px;
+
+  background: #252954;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+
+  font-size: 20px;
+
+  border-radius: 10px;
+}
+
+.mainBtn {
+  position: relative;
+  background-image: linear-gradient(315deg, #4255d4 0%, #4255d4 74%);
+
+  transition: transform 0.1s linear;
+}
+.mainBtn span {
+  padding: 20px 50px;
+  position: relative;
+  display: block;
+  width: 100%;
   height: 100%;
 
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  text-align: center;
-
-  color: #ece7e8;
-  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.mainBtn:before,
+.mainBtn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #4255d4;
+  transition: all 0.5s ease;
+}
+.mainBtn:before {
+  height: 0%;
+  width: 2px;
+}
+.mainBtn:after {
+  width: 0%;
+  height: 2px;
+}
+.mainBtn:hover:before {
+  height: 100%;
+}
+.mainBtn:hover:after {
+  width: 100%;
+}
+.mainBtn:hover {
+  transform: scale(1.03);
+  background: transparent;
+}
+.mainBtn span:hover {
+  color: #ffffff;
+  box-shadow: 0 0 15px #252954;
+}
+.mainBtn span:before,
+.mainBtn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #4255d4;
+  transition: all 0.5s ease;
+}
+.mainBtn span:before {
+  width: 2px;
+  height: 0%;
+}
+.mainBtn span:after {
+  height: 2px;
+  width: 0%;
+}
+.mainBtn span:hover:before {
+  height: 100%;
+}
+.mainBtn span:hover:after {
+  width: 100%;
 }
