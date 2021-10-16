@@ -4,7 +4,6 @@ import cl from "./NavBar.module.css";
 import logo from "../../../assets/svg/react-logo.svg";
 
 const NavBar = () => {
-  console.log("render Nav");
   return (
     <nav className={cl.navbar}>
       <div className={cl.logo}>

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ageEnding } from "../../utils/ageEnding";
 import { Link } from "react-router-dom";
-import ButtonComponent from "./button";
+import ButtonComponent from "../UI/Button/button";
 
 const MemberCard = ({ member }) => {
   const handleToggleFavorite = (member) => {

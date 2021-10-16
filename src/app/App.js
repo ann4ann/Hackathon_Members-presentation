@@ -1,12 +1,11 @@
 import React from "react";
+import Particles from "react-particles-js";
 import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import particlesConfig from "./assets/particlesConfig.json";
 import AppRouter from "./components/AppRouter";
 import Container from "./components/Container";
 import NavBar from "./components/UI/Navbar/NavBar";
-import "./App.css";
-
-import Particles from "react-particles-js";
-import particlesConfig from "./assets/particlesConfig.json";
 
 function App() {
   return (

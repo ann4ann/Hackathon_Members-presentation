@@ -1,6 +1,6 @@
-import React from "react";
-import MemberCard from "./memberCard";
 import PropTypes from "prop-types";
+import React from "react";
+import MemberCard from "../memberCard/memberCard";
 
 const MembersList = ({ members }) => {
   const handleAddFavorite = (member) => {

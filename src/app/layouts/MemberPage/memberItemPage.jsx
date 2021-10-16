@@ -1,17 +1,14 @@
-import React from "react";
-import { ageEnding } from "../utils/ageEnding";
-import PropTypes from "prop-types";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import ButtonComponent from "../components/UI/button";
-import Progress from "../components/UI/progress/progress";
-import Badge from "../components/UI/badge";
+import PropTypes from "prop-types";
+import React from "react";
 import { Link } from "react-router-dom";
+import Badge from "../../components/UI/Badge/badge";
+import ButtonComponent from "../../components/UI/Button/button";
+import Progress from "../../components/UI/ProgressBar/ProgressBar";
+import { ageEnding } from "../../utils/ageEnding";
 
 const MemberItemPage = ({ id, members }) => {
   const currentMemberInfo = members.find((member) => member.id === id);
-  const addToFavorites = () => {
-    console.log("added to favorites");
-  };
 
   console.log(Object.entries(currentMemberInfo.skills));
   return (
@@ -73,7 +70,7 @@ const MemberItemPage = ({ id, members }) => {
           ))}
         </div>
         <div className="d-flex align-items-center m-3">
-          <div className="fs-4" >Скиллы:</div>
+          <div className="fs-4">Скиллы:</div>
           <div className="mx-4">
             {Object.entries(currentMemberInfo.skills).map((skill) => (
               <div key={skill[0]} className="m-3">
@@ -89,11 +86,7 @@ const MemberItemPage = ({ id, members }) => {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <ButtonComponent
-          color="outline-info"
-          functBtn={addToFavorites}
-          name="Добавить в избранное"
-        />
+        <ButtonComponent color="outline-info" name="Добавить в избранное" />
         <Link to="/members" className="btn btn-outline-info ms-3">
           Вернуться назад
         </Link>

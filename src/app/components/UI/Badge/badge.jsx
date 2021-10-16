@@ -1,5 +1,5 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 
 const Badge = ({ color, content }) => {
   return <span className={"badge m-1 bg-" + color}>{content}</span>;

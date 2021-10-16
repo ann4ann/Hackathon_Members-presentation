@@ -1,7 +1,7 @@
 import React from "react";
-import Breadcramps from "../components/UI/breadcramps";
 import { Link } from "react-router-dom";
-import classes from "../layouts/main.module.css";
+import Breadcramps from "../../components/UI/Breadcramps/breadcramps";
+import classes from "./main.module.css";
 
 const MainPage = () => {
   return (
