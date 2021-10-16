@@ -1,26 +1,19 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React, { useContext, useEffect } from "react";
 import MembersList from "../../components/membersList/MembersList";
-import Breadcramps from "../../components/UI/Breadcramps/breadcramps";
-// import members from "../data/members";
+import Breadcramps from "../../components/UI/Breadcramps/Breadcramps";
+import { MembersContext } from "../../context";
 
 const FavoritesPage = () => {
-  const initialState = Object.keys(localStorage).map((key) =>
-    JSON.parse(localStorage.getItem(key))
-  );
-  const [favoriteMembers] = useState(initialState);
-
-  // const newState = Object.keys(localStorage).map((key) =>
-  //   JSON.parse(localStorage.getItem(key))
-  // );
-  // const filtered = members.filter((member) =>
-  //   newState.some((el) => el.id === member.id)
-  // );
+  const { members } = useContext(MembersContext);
+  useEffect(() => {
+    console.log("hello");
+  }, [members]);
 
   return (
     <>
       <Breadcramps />
-      <MembersList members={favoriteMembers} />
+      <MembersList members={members.filter((member) => member.isFavorite)} />
     </>
   );
 };

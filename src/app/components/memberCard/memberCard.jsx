@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { ageEnding } from "../../utils/ageEnding";
 import { Link } from "react-router-dom";
-import Button from "../UI/Button/button";
+import Button from "../UI/Button/Button";
+import cl from "./memberCard.module.css";
 
 const MemberCard = ({ member }) => {
+  const [isFavorite, setIsFavorite] = useState(false);
+
   const handleToggleFavorite = (member) => {
+    member.isFavorite = !member.isFavorite;
+    setIsFavorite(!isFavorite);
     localStorage.getItem(member.id) === null
       ? localStorage.setItem(member.id, JSON.stringify(member))
       : localStorage.removeItem(member.id);
@@ -36,17 +41,21 @@ const MemberCard = ({ member }) => {
           <Button color="primary">Открыть</Button>
         </Link>
 
-        <Button color="primary" onClick={() => handleToggleFavorite(member)}>
-          Добавить в избранное
-        </Button>
+        <Button
+          classes={
+            member.isFavorite
+              ? `${cl.favoriteBtn} ${cl.active}`
+              : `${cl.favoriteBtn}`
+          }
+          title="Добавить в избранное"
+          onClick={() => handleToggleFavorite(member)}></Button>
       </div>
     </div>
   );
 };
 
 MemberCard.propTypes = {
-  member: PropTypes.object.isRequired,
-  onAddFavorite: PropTypes.func.isRequired
+  member: PropTypes.object.isRequired
 };
 
 export default MemberCard;

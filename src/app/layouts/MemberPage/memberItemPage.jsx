@@ -2,15 +2,14 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
-import Badge from "../../components/UI/Badge/badge";
-import ButtonComponent from "../../components/UI/Button/button";
+import Badge from "../../components/UI/Badge/Badge";
+import ButtonComponent from "../../components/UI/Button/Button";
 import Progress from "../../components/UI/ProgressBar/ProgressBar";
 import { ageEnding } from "../../utils/ageEnding";
 
 const MemberItemPage = ({ id, members }) => {
   const currentMemberInfo = members.find((member) => member.id === id);
 
-  console.log(Object.entries(currentMemberInfo.skills));
   return (
     <div className="m-5">
       <h1>{currentMemberInfo.name}</h1>

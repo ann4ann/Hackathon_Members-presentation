@@ -1,0 +1,22 @@
+.favoriteBtn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  background: url("../../assets/svg/star.svg") no-repeat center center;
+  background-size: contain;
+
+  transition: 0.1s ease-in;
+}
+
+.active {
+  background: url("../../assets/svg/star-fill.svg") no-repeat center center;
+}
+
+.icon {
+  fill: white;
+}
+.favoriteBtn:hover {
+  filter: drop-shadow(0 0 3px yellow);
+}

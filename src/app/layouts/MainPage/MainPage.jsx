@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Breadcramps from "../../components/UI/Breadcramps/breadcramps";
-import ButtonComponent from "../../components/UI/Button/button";
+import Breadcramps from "../../components/UI/Breadcramps/Breadcramps";
+import ButtonComponent from "../../components/UI/Button/Button";
 import cl from "./main.module.css";
 
 const MainPage = () => {

@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router";
-import Breadcramps from "../../components/UI/Breadcramps/breadcramps";
-import MemberItemPage from "../MemberPage/memberItemPage";
 import MembersList from "../../components/membersList/MembersList";
-import members from "../../data/members";
+import Breadcramps from "../../components/UI/Breadcramps/Breadcramps";
+import { MembersContext } from "../../context";
+import MemberItemPage from "../MemberPage/MemberItemPage";
 
 const TeamPage = () => {
   const params = useParams();
   const { memberId } = params;
-
+  const { members } = useContext(MembersContext);
   return (
     <>
       <Breadcramps />
