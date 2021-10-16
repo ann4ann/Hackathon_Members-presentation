@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ageEnding } from "../../utils/ageEnding";
 import { Link } from "react-router-dom";
-import ButtonComponent from "../UI/Button/button";
+import Button from "../UI/Button/button";
 
 const MemberCard = ({ member }) => {
   const handleToggleFavorite = (member) => {
@@ -33,14 +33,12 @@ const MemberCard = ({ member }) => {
       </div>
       <div>
         <Link to={`members/${member.id}`}>
-          <ButtonComponent color="primary" name="Open"></ButtonComponent>
+          <Button color="primary">Открыть</Button>
         </Link>
 
-        <ButtonComponent
-          color="primary"
-          name="fav"
-          functBtn={() => handleToggleFavorite(member)}
-        />
+        <Button color="primary" onClick={() => handleToggleFavorite(member)}>
+          Добавить в избранное
+        </Button>
       </div>
     </div>
   );

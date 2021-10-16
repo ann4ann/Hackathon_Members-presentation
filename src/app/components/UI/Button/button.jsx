@@ -1,19 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-const ButtonComponent = ({ color, functBtn, name }) => {
+const Button = ({ color, onClick, children }) => {
   return (
     <button
       type="button"
       className={"btn btn-" + color + " m-1"}
-      onClick={functBtn}>
-      {name}
+      onClick={onClick}>
+      {children}
     </button>
   );
 };
 
-ButtonComponent.propTypes = {
+Button.propTypes = {
   color: PropTypes.string,
-  functBtn: PropTypes.func,
-  name: PropTypes.string
+  onClick: PropTypes.func,
+  children: PropTypes.object
 };
-export default ButtonComponent;
+export default Button;

@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Breadcramps from "../../components/UI/Breadcramps/breadcramps";
-import classes from "./main.module.css";
+import ButtonComponent from "../../components/UI/Button/button";
+import cl from "./main.module.css";
 
 const MainPage = () => {
   return (
@@ -18,8 +19,13 @@ const MainPage = () => {
             разрабатывали это приложение и надеемся оно вам понравится!
           </p>
         </h1>
-        <Link className={classes.main} to="/members">
-          <h1>Meet our team</h1>{" "}
+        <ButtonComponent name="meet">
+          <Link className={cl.main} to="/members">
+            <h1>Meet our team</h1>
+          </Link>
+        </ButtonComponent>
+        <Link className={cl.main} to="/members">
+          <h1>Meet our team</h1>
         </Link>
       </div>
     </>
