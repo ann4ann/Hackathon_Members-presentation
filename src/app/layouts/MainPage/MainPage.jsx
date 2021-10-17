@@ -8,11 +8,7 @@ const MainPage = () => {
   return (
     <>
       <Breadcrumbs />
-      <div
-        className={cl.mainWrapper}
-        data-aos="zoom-in"
-        data-aos-delay="500"
-        data-aos-duration="1200">
+      <div className={cl.mainWrapper}>
         <p align="center" className={cl.mainText}>
           В команду, которая разработала Реакт-приложение, где вы сейчас
           находитесь, входит 5 человек. Каждый из нас очень любит Реакт,

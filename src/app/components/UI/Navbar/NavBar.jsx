@@ -5,7 +5,7 @@ import logo from "../../../assets/svg/react-logo.svg";
 
 const NavBar = () => {
   return (
-    <nav className={cl.navbar} data-aos="fade-down" data-aos-delay="200">
+    <nav className={cl.navbar}>
       <div className={cl.logo}>
         <img src={logo} alt="logo" />
         <div className={cl.logoTitle}>React Hackathon</div>

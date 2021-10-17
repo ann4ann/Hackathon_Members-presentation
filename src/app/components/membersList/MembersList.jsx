@@ -5,7 +5,7 @@ import cl from "./MembersList.module.css";
 
 const MembersList = ({ members, onFavorite }) => {
   return (
-    <div className={cl.memberWrapper} data-aos="zoom-in">
+    <div className={cl.memberWrapper}>
       {members.map((member) => (
         <MemberCard key={member.id} member={member} onFavorite={onFavorite} />
       ))}
