@@ -1,19 +1,13 @@
 import PropTypes from "prop-types";
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import MembersList from "../../components/membersList/MembersList";
 import Breadcramps from "../../components/UI/Breadcramps/Breadcramps";
-import { MembersContext } from "../../context";
 
 const FavoritesPage = () => {
-  const { members } = useContext(MembersContext);
-  useEffect(() => {
-    console.log("hello");
-  }, [members]);
-
   return (
     <>
       <Breadcramps />
-      <MembersList members={members.filter((member) => member.isFavorite)} />
+      <MembersList members={[]} />
     </>
   );
 };

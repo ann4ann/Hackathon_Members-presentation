@@ -16,7 +16,7 @@ const Button = ({ onClick, children, classes, ...rest }) => {
 Button.propTypes = {
   color: PropTypes.string,
   onClick: PropTypes.func,
-  children: PropTypes.string,
+  children: PropTypes.any,
   classes: PropTypes.string,
   rest: PropTypes.string
 };
