@@ -23,7 +23,7 @@
 }
 
 .tilt {
-  width: 18%;
+  width: 20%;
   height: 400px;
 }
 
@@ -40,7 +40,14 @@
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
+
+  transition: box-shadow 0.1s linear;
 }
+
+.card:hover {
+  box-shadow: 0 0 30px 1px #4255d4;
+}
+
 .card .content {
   position: relative;
   padding: 20px;

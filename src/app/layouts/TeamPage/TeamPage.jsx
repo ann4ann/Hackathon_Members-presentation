@@ -4,6 +4,7 @@ import MembersList from "../../components/membersList/MembersList";
 import Breadcrumbs from "../../components/UI/Breadcrumbs/Breadcrumbs";
 import MemberItemPage from "../MemberPage/MemberItemPage";
 import { MembersContext } from "../../context";
+import cl from "./TeamPage.module.css";
 
 const TeamPage = () => {
   const params = useParams();
@@ -29,6 +30,7 @@ const TeamPage = () => {
   return (
     <>
       <Breadcrumbs />
+      <h1 className={cl.title}>Наша команда</h1>
       {memberId ? (
         <MemberItemPage id={memberId} members={members} />
       ) : (

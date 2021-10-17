@@ -62,6 +62,8 @@
   max-width: 35px;
   width: 100%;
   height: 35px;
+
+  animation: anim__rotate 8.2s linear infinite;
 }
 
 .logoTitle {
@@ -69,3 +71,14 @@
   font-size: 20px;
   display: block;
 }
+
+@keyframes anim__rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

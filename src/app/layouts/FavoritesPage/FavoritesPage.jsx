@@ -2,10 +2,11 @@ import React, { useState, useEffect, useContext } from "react";
 import MembersList from "../../components/membersList/MembersList";
 import Breadcrumbs from "../../components/UI/Breadcrumbs/Breadcrumbs";
 import { MembersContext } from "../../context";
+import cl from "./FavoritesPage.module.css";
 
 const FavoritesPage = () => {
   const { members, setMembers } = useContext(MembersContext);
-  const [favoritesMembers, setFavoritesMembers] = useState(members);
+  const [favoritesMembers, setFavoritesMembers] = useState([]);
 
   useEffect(() => {
     setFavoritesMembers(members.filter((member) => member.isFavorite));
@@ -27,10 +28,15 @@ const FavoritesPage = () => {
   return (
     <>
       <Breadcrumbs />
-      <MembersList
-        members={favoritesMembers}
-        onFavorite={handleToggleFavorite}
-      />
+      <h1 className={cl.title}>Избранные</h1>
+      {favoritesMembers.length > 0 ? (
+        <MembersList
+          members={favoritesMembers}
+          onFavorite={handleToggleFavorite}
+        />
+      ) : (
+        <div className={cl.error}>Список пуст</div>
+      )}
     </>
   );
 };
