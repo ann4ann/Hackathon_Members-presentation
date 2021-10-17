@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { ageEnding } from "../../utils/ageEnding";
 import { Link } from "react-router-dom";
@@ -6,17 +6,7 @@ import Button from "../UI/Button/Button";
 import cl from "./memberCard.module.css";
 import Tilt from "react-tilt";
 
-const MemberCard = ({ member }) => {
-  const [isFavorite, setIsFavorite] = useState(false);
-
-  const handleToggleFavorite = (member) => {
-    member.isFavorite = !member.isFavorite;
-    setIsFavorite(!isFavorite);
-    localStorage.getItem(member.id) === null
-      ? localStorage.setItem(member.id, JSON.stringify(member))
-      : localStorage.removeItem(member.id);
-  };
-
+const MemberCard = ({ member, onFavorite }) => {
   return (
     <Tilt
       className={cl.tilt}
@@ -50,7 +40,7 @@ const MemberCard = ({ member }) => {
                 : `${cl.favoriteBtn}`
             }
             title="Добавить в избранное"
-            onClick={() => handleToggleFavorite(member)}></Button>
+            onClick={() => onFavorite(member.id)}></Button>
         </div>
       </div>
     </Tilt>
@@ -58,7 +48,8 @@ const MemberCard = ({ member }) => {
 };
 
 MemberCard.propTypes = {
-  member: PropTypes.object.isRequired
+  member: PropTypes.object.isRequired,
+  onFavorite: PropTypes.func
 };
 
 export default MemberCard;

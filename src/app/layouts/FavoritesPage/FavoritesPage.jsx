@@ -1,19 +1,38 @@
-import PropTypes from "prop-types";
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import MembersList from "../../components/membersList/MembersList";
-import Breadcramps from "../../components/UI/Breadcramps/Breadcramps";
+import Breadcrumbs from "../../components/UI/Breadcrumbs/Breadcrumbs";
+import { MembersContext } from "../../context";
 
 const FavoritesPage = () => {
+  const { members, setMembers } = useContext(MembersContext);
+  const [favoritesMembers, setFavoritesMembers] = useState(members);
+
+  useEffect(() => {
+    setFavoritesMembers(members.filter((member) => member.isFavorite));
+  }, []);
+
+  const handleToggleFavorite = (memberId) => {
+    setMembers(
+      members.filter((member) => {
+        if (member.id === memberId) {
+          member.isFavorite = !member.isFavorite;
+          return member;
+        }
+        return member;
+      })
+    );
+    setFavoritesMembers(members.filter((member) => member.isFavorite));
+  };
+
   return (
     <>
-      <Breadcramps />
-      <MembersList members={[]} />
+      <Breadcrumbs />
+      <MembersList
+        members={favoritesMembers}
+        onFavorite={handleToggleFavorite}
+      />
     </>
   );
-};
-
-FavoritesPage.propTypes = {
-  members: PropTypes.array
 };
 
 export default FavoritesPage;

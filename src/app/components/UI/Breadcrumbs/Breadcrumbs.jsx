@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
 
-const Breadcramps = () => {
+const Breadcrumbs = () => {
   const history = useHistory();
 
   const { pathname } = history.location;
@@ -32,4 +32,4 @@ const Breadcramps = () => {
   );
 };
 
-export default Breadcramps;
+export default Breadcrumbs;
