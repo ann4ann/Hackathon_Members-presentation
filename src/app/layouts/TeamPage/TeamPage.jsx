@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useParams } from "react-router";
 import MembersList from "../../components/membersList/MembersList";
 import Breadcrumbs from "../../components/UI/Breadcrumbs/Breadcrumbs";
-import MemberItemPage from "../MemberPage/MemberItemPage";
+import MemberItemPage from "../MemberPage/memberItemPage";
 import { MembersContext } from "../../context";
 import cl from "./TeamPage.module.css";
 

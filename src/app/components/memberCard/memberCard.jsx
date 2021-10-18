@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ageEnding } from "../../utils/ageEnding";
 import { Link } from "react-router-dom";
-import Button from "../UI/Button/Button";
+import Button from "../UI/Button/button";
 import cl from "./memberCard.module.css";
 import Tilt from "react-tilt";
 

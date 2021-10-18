@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Breadcrumbs from "../../components/UI/Breadcrumbs/Breadcrumbs";
-import Button from "../../components/UI/Button/Button";
+import Button from "../../components/UI/Button/button";
 import cl from "./main.module.css";
 
 const MainPage = () => {

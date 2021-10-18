@@ -2,8 +2,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
-import Badge from "../../components/UI/Badge/Badge";
-import ButtonComponent from "../../components/UI/Button/Button";
+import Badge from "../../components/UI/Badge/badge";
+import Button from "../../components/UI/Button/button";
 import Progress from "../../components/UI/ProgressBar/ProgressBar";
 import { ageEnding } from "../../utils/ageEnding";
 
@@ -85,7 +85,9 @@ const MemberItemPage = ({ id, members }) => {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <ButtonComponent color="outline-info" name="Добавить в избранное" />
+        <Button color="outline-info" name="Добавить в избранное">
+          FAV
+        </Button>
         <Link to="/members" className="btn btn-outline-info ms-3">
           Вернуться назад
         </Link>

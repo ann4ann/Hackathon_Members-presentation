@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import MemberCard from "../memberCard/MemberCard";
+import MemberCard from "../memberCard/memberCard";
 import cl from "./MembersList.module.css";
 
 const MembersList = ({ members, onFavorite }) => {
